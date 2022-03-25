@@ -8,7 +8,7 @@ sudo cp -r console_libraries consoles /etc/prometheus
 sudo cp promtool /etc/prometheus
 sudo cp prometheus promtool /usr/local/bin
 cd ..
-sudo cp prometheus.yml /etc/prometheus
+sudo cp prometheus.new.yml /etc/prometheus
 sudo cp prometheus.service /etc/systemd/system
 sudo chown test:test /usr/local/bin/prometheus
 sudo chown test:test /usr/local/bin/promtool
