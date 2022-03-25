@@ -10,11 +10,11 @@ sudo cp prometheus promtool /usr/local/bin
 cd ..
 sudo cp prometheus.yml /etc/prometheus
 sudo cp prometheus.service /etc/systemd/system
-sudo chown test:test /usr/local/bin/prometheus
-sudo chown test:test /usr/local/bin/promtool
-sudo chown -R test:test /etc/prometheus/consoles
-sudo chown -R test:test /etc/prometheus/console_libraries
-sudo chown -R test:test /var/lib/prometheus/
+sudo chown root:root /usr/local/bin/prometheus
+sudo chown root:root /usr/local/bin/promtool
+sudo chown -R root:root /etc/prometheus/consoles
+sudo chown -R root:root /etc/prometheus/console_libraries
+sudo chown -R root:root /var/lib/prometheus/
 sudo systemctl daemon-reload
 sudo systemctl start prometheus
 sudo systemctl enable prometheus
