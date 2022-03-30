@@ -28,7 +28,7 @@ sudo useradd -rs /bin/false node_exporter
 sudo cp node_exporter.service /lib/systemd/system
 sudo systemctl daemon-reload
 sudo systemctl start node_exporter
-sudo systemctl enable node_exporte
+sudo systemctl enable node_exporter
 
 sudo wget https://github.com/prometheus/mysqld_exporter/releases/download/v0.14.0/mysqld_exporter-0.14.0.linux-amd64.tar.gz
 sudo tar xvf mysqld_exporter-0.14.0.linux-amd64.tar.gz
