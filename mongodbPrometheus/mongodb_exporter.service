@@ -1,0 +1,11 @@
+[Unit]
+Description=MongoDB Exporter
+User=prometheus
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/local/bin/mongodb_exporter --mongodb.uri=mongodb://mongodb_exporter:redhat@0.0.0.0:27017
+
+[Install]
+WantedBy=multi-user.target
