@@ -1,0 +1,4 @@
+* * * * * /.........../cpu.sh >> /......./cpu.log
+* * * * * /.........../memory.sh >> /......../memory.log
+@monthly rm /....../cpu.log
+@monthly rm /....../memory.log
